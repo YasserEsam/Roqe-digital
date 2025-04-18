@@ -1,6 +1,6 @@
-import { Brand } from "@/types/brand";
+import { Tech } from "@/types/tech";
 
-const brandsData: Brand[] = [
+const techsData: Tech[] = [
   {
     id: 1,
     name: "React",
@@ -17,7 +17,7 @@ const brandsData: Brand[] = [
     id: 3,
     name: "Tailwind CSS",
     href: "https://tailwindcss.com",
-    image: "images/brands/tailwindcss.svg",
+    image: "images/techs/tailwindcss.svg",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const brandsData: Brand[] = [
     id: 5,
     name: "Laravel",
     href: "https://laravel.com",
-    image: "images/brands/laravel.svg",
+    image: "images/techs/laravel.svg",
   },
   {
     id: 6,
@@ -65,4 +65,4 @@ const brandsData: Brand[] = [
   },
 ];
 
-export default brandsData;
+export default techsData;
