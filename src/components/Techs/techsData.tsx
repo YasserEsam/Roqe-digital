@@ -17,7 +17,7 @@ const techsData: Tech[] = [
     id: 3,
     name: "Tailwind CSS",
     href: "https://tailwindcss.com",
-    image: "images/techs/tailwindcss.svg",
+    image: "/images/techs/tailwindcss.svg",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const techsData: Tech[] = [
     id: 5,
     name: "Laravel",
     href: "https://laravel.com",
-    image: "images/techs/laravel.svg",
+    image: "/images/techs/laravel.svg",
   },
   {
     id: 6,
