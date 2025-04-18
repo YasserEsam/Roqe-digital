@@ -11,10 +11,16 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white">
+                <h1
+                  data-aos="fade-in"
+                  className="mb-5 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white"
+                >
                   انطلق بأعمالك نحو القمة مع رُقيّ ديجيتال
                 </h1>
-                <p className="text-body-color dark:text-body-color-dark mb-12 text-base leading-relaxed! sm:text-lg md:text-xl">
+                <p
+                  data-aos="fade-in"
+                  className="text-body-color dark:text-body-color-dark mb-12 text-base leading-relaxed! sm:text-lg md:text-xl"
+                >
                   في عالم يتحول فيه كل شيء إلى الرقمنة، نقدم لك في رُقيّ ديجيتال
                   حلولاً ذكية ومبتكرة تساعدك على التميز والانتشار الرقمي. سواء
                   كنت فرداً تبحث عن موقع شخصي، أو صاحب مشروع تطمح بمتجر إلكتروني
@@ -23,12 +29,14 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                   <Link
+                    data-aos="fade-in"
                     href="https://nextjstemplates.com/templates/saas-starter-startup"
                     className="bg-primary hover:bg-primary/80 rounded-xs px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
                   >
-                     ابدأ مشروعك الآن🔥
+                    ابدأ مشروعك الآن🔥
                   </Link>
                   <Link
+                    data-aos="fade-in"
                     href="https://github.com/NextJSTemplates/startup-nextjs"
                     className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >

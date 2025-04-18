@@ -14,8 +14,8 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="من نحن"
+        description="نحن نؤمن بأن كل فكرة عظيمة تستحق التنفيذ. في موقعنا، نكرّس جهودنا لصناعة حلول رقمية مبتكرة تساعد الأفراد والشركات على النمو، التطوّر، وتحقيق النجاح الحقيقي."
       />
       <AboutSectionOne />
       <AboutSectionTwo />

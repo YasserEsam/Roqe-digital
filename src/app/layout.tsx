@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Cairo } from "next/font/google"; // ✅ استدعاء خط Cairo
 import "../styles/index.css";
-
+import AOSWrapper from '@/components/AOS/AOSWrapper'
 import { Providers } from "./providers";
 
 // ✅ تحميل خط Cairo وتحديد الـ subsets والدوال
@@ -24,12 +24,14 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="ar">
       <head />
       <body dir="rtl" className={`bg-[#FCFCFC] dark:bg-black ${cairo.className}`}>
+      <AOSWrapper>
         <Providers>
           <Header />
           {children}
           <Footer />
           <ScrollToTop />
         </Providers>
+      </AOSWrapper>
       </body>
     </html>
   );

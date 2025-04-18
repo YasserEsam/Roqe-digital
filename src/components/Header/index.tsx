@@ -40,7 +40,8 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 py-2 z-40 flex w-full items-center ${
+ 
+        className={`header top-0 left-0 z-40 flex w-full items-center py-2 ${
           sticky
             ? "dark:bg-gray-dark dark:shadow-sticky-dark shadow-sticky fixed z-9999 bg-white/80 backdrop-blur-xs transition"
             : "absolute bg-transparent"
@@ -49,7 +50,11 @@ const Header = () => {
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-72 max-w-full px-4 xl:ml-12">
-                <h1 className="text-xl font-bold  md:text-2xl lg:text-3xl">رُقــيّ ديجيتال</h1>
+              <Link href="/">
+                <h1 className="text-xl font-bold md:text-2xl lg:text-3xl">
+                  رُقــيّ ديجيتال
+                </h1>
+              </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
@@ -138,7 +143,6 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pl-10 lg:pr-0">
-               
                 <div>
                   <ThemeToggler />
                 </div>

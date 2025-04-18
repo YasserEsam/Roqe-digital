@@ -11,7 +11,7 @@ export default function Video() {
   return (
     <>
       <section className="relative z-10 py-16 md:py-20 lg:py-28">
-        <div className="container">
+        <div className="container"  data-aos="fade-up">
           <SectionTitle
             title="تعرّف على أعمالنا"
             paragraph="شاهد هذا الفيديو القصير الذي يستعرض نماذج من أعمالنا الاحترافية في تطوير المواقع والمتاجر الإلكترونية، وتصميم واجهات الاستخدام، وتحسين محركات البحث. دع أعمالنا تتحدث عنّا."
@@ -19,7 +19,7 @@ export default function Video() {
             mb="80px"
           />
         </div>
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden" data-aos="fade-in">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[770px] overflow-hidden rounded-md">

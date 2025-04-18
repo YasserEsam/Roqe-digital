@@ -29,22 +29,22 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             {paragraph}
           </p>
           <div className="flex items-center">
-            <div className="border-body-color/10 mr-5 flex items-center border-r pr-5 xl:mr-3 xl:pr-3 2xl:mr-5 2xl:pr-5 dark:border-white/10">
-              <div className="mr-4">
+            <div className="border-body-color/10 ml-5 flex items-center border-r pl-5 xl:mr-3 xl:pl-3 2xl:ml-5 2xl:pl-5 dark:border-white/10">
+              <div className="ml-4">
                 <div className="relative h-10 w-10 overflow-hidden rounded-full">
                   <Image src={author.image} alt="author" fill />
                 </div>
               </div>
               <div className="w-full">
                 <h4 className="text-dark mb-1 text-sm font-medium dark:text-white">
-                  By {author.name}
+                  بواسطة {author.name}
                 </h4>
                 <p className="text-body-color text-xs">{author.designation}</p>
               </div>
             </div>
             <div className="inline-block">
               <h4 className="text-dark mb-1 text-sm font-medium dark:text-white">
-                Date
+                التاريخ   
               </h4>
               <p className="text-body-color text-xs">{publishDate}</p>
             </div>

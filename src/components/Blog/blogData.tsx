@@ -3,45 +3,46 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "لماذا يُعدّ Next.js الخيار الأمثل لتطبيقات الويب الحديثة؟",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "في هذا المقال، نستعرض الأسباب التي تجعل من Next.js إطار العمل المفضل للمطورين، وكيف يوفّر أداءً عاليًا وتجربة مستخدم ممتازة مع دعم رائع لـ SEO والتصيير على الخادم.",
     image: "/images/blog/blog-01.jpg",
     author: {
-      name: "Samuyl Joshi",
+      name: "سامي الجبري",
       image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      designation: "مطوّر واجهات أمامية",
     },
-    tags: ["creative"],
+    tags: ["Next.js", "تطوير الويب"],
     publishDate: "2025",
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "كيف يُغيّر الذكاء الاصطناعي مستقبل البرمجة؟",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "من كتابة الأكواد إلى تحليل البيانات، الذكاء الاصطناعي أصبح جزءًا لا يتجزأ من أدوات المطورين. تعرّف على أبرز التطبيقات العملية للذكاء الاصطناعي في مجال تطوير البرمجيات.",
     image: "/images/blog/blog-02.jpg",
     author: {
-      name: "Musharof Chy",
+      name: "منى القحطاني",
       image: "/images/blog/author-02.png",
-      designation: "Content Writer",
+      designation: "كاتبة محتوى تقني",
     },
-    tags: ["computer"],
+    tags: ["الذكاء الاصطناعي", "برمجة"],
     publishDate: "2025",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "أفضل الممارسات لتصميم واجهات مستخدم جذابة وعملية",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "واجهة المستخدم هي أول ما يراه الزائر. في هذا المقال، نشاركك أهم المبادئ التي تجعل التصميم متناسقًا، سهل الاستخدام، ومناسبًا لتجربة المستخدم الحديثة.",
     image: "/images/blog/blog-03.jpg",
     author: {
-      name: "Lethium Deo",
+      name: "ليث السالمي",
       image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      designation: "مصمم UX/UI",
     },
-    tags: ["design"],
+    tags: ["تصميم", "UI/UX"],
     publishDate: "2025",
   },
 ];
+
 export default blogData;

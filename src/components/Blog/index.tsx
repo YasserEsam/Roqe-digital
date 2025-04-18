@@ -5,13 +5,14 @@ import blogData from "./blogData";
 const Blog = () => {
   return (
     <section
+      data-aos="fade-in"
       id="blog"
       className="bg-gray-light dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
     >
       <div className="container">
         <SectionTitle
-          title="Our Latest Blogs"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="أحدث مقالاتنا"
+          paragraph="نشاركك أفكارًا ملهمة، ومواضيع تقنية حديثة، وتجارب غنية تساعدك على تطوير مهاراتك ومواكبة كل جديد في عالم الويب."
           center
         />
 
