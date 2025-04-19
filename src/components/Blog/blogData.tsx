@@ -130,10 +130,10 @@ const blogData: Blog[] = [
     title: "أفضل إطارات عمل JavaScript لعام 2024",
     paragraph:
       "مع تعدد إطارات عمل الجافاسكريبت، يصبح الاختيار بينها تحديًا. نستعرض في هذا المقال أفضل الخيارات المتاحة ومتى تستخدم كل منها.",
-    image: "/images/blog/blog-04.jpg",
+    image: "/images/blog/blog-01.jpg",
     author: {
       name: "نورا الفهد",
-      image: "/images/blog/author-04.png",
+      image: "/images/blog/author-01.png",
       designation: "مطوّرة Full Stack",
     },
     tags: ["JavaScript", "Frontend", "مقارنات"],

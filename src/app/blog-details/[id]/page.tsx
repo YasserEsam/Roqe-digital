@@ -12,18 +12,23 @@ interface BlogDetailsProps {
   };
 }
 
-export async function generateMetadata({
-  params,
-}: BlogDetailsProps): Promise<Metadata> {
-  const blog = blogData.find((blog) => blog.id === parseInt(params.id));
+export async function generateMetadata(
+  props: { params: { id: string } }
+): Promise<Metadata> {
+  // Await the params object before accessing its properties
+  const { id } = await props.params;
+  const blog = blogData.find((blog) => blog.id === parseInt(id));
+  
   return {
     title: blog?.title || "تفاصيل المقال",
     description: blog?.paragraph || "صفحة تفاصيل المقال",
   };
 }
 
-const BlogDetailsPage = ({ params }: BlogDetailsProps) => {
-  const blog = blogData.find((blog) => blog.id === parseInt(params.id));
+async function BlogDetailsPage({ params }: BlogDetailsProps) {
+  // Await the params object before accessing its properties
+  const { id } = await params;
+  const blog = blogData.find((blog) => blog.id === parseInt(id));
 
   if (!blog) return <div>المقال غير موجود</div>;
 
@@ -43,7 +48,7 @@ const BlogDetailsPage = ({ params }: BlogDetailsProps) => {
               {/* Author & Stats */}
               <div className="border-body-color/10 mb-10 flex flex-wrap items-center justify-between border-b pb-4 dark:border-white/10">
                 <div className="flex flex-wrap items-center">
-                  <div className="ml-10 mb-5 flex items-center">
+                  <div className="mb-5 ml-10 flex items-center">
                     <div className="relative ml-4 h-10 w-10 overflow-hidden rounded-full">
                       <Image
                         src={blog.author.image}
@@ -110,7 +115,7 @@ const BlogDetailsPage = ({ params }: BlogDetailsProps) => {
               {/* Quote Section */}
               <div className="bg-primary/10 relative z-10 mb-10 overflow-hidden rounded-md p-8">
                 <p className="text-body-color text-center text-base font-medium italic">
-                &laquo;{blog.quote}&raquo;
+                  &laquo;{blog.quote}&raquo;
                 </p>
                 <span className="absolute top-0 left-0 z-[-1]">
                   {/* SVG */}
@@ -128,6 +133,6 @@ const BlogDetailsPage = ({ params }: BlogDetailsProps) => {
       </div>
     </section>
   );
-};
+}
 
 export default BlogDetailsPage;
