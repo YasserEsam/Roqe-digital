@@ -9,8 +9,8 @@ const blogData: Blog[] = [
       "في هذا المقال، نستعرض الأسباب التي تجعل من Next.js إطار العمل المفضل للمطورين، وكيف يوفّر أداءً عاليًا وتجربة مستخدم ممتازة مع دعم رائع لـ SEO والتصيير على الخادم.",
     image: "/images/blog/blog-01.jpg",
     author: {
-      name: "سامي الجبري",
-      image: "/images/blog/author-01.png",
+      name: "أحمد السنادي",
+      image: "/images/blog/author-04.jpg",
       designation: "مطوّر واجهات أمامية",
     },
     tags: ["Next.js", "تطوير الويب", "أداء الموقع"],
@@ -89,8 +89,8 @@ const blogData: Blog[] = [
       "واجهة المستخدم هي أول ما يراه الزائر. في هذا المقال، نشاركك أهم المبادئ التي تجعل التصميم متناسقًا، سهل الاستخدام، ومناسبًا لتجربة المستخدم الحديثة.",
     image: "/images/blog/blog-03.jpg",
     author: {
-      name: "ليث السالمي",
-      image: "/images/blog/author-03.png",
+      name: "أحمد السنادي",
+      image: "/images/blog/author-04.jpg",
       designation: "خبير تجربة مستخدم",
     },
     tags: ["تصميم", "UI/UX", "تجربة المستخدم"],

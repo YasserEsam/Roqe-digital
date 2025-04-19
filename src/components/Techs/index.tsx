@@ -9,7 +9,7 @@ const Technologies = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="relative overflow-hidden pt-16">
+    <section className="relative overflow-hidden pt-16" data-aos="fade-up">
       {/* Background Decorative Circles */}
       <DecorativeBackground />
 

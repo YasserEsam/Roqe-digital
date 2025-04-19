@@ -29,7 +29,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             {paragraph}
           </p>
           <div className="flex items-center">
-            <div className="border-body-color/10 ml-5 flex items-center border-r pl-5 xl:mr-3 xl:pl-3 2xl:ml-5 2xl:pl-5 dark:border-white/10">
+            <div className="border-body-color/10 ml-5 flex items-center border-r pr-5 xl:mr-3 xl:pl-3 2xl:ml-5 2xl:pl-5 dark:border-white/10">
               <div className="ml-4">
                 <div className="relative h-10 w-10 overflow-hidden rounded-full">
                   <Image src={author.image} alt="author" fill />
