@@ -3,28 +3,10 @@
 import { Tech } from "@/types/tech";
 import Image from "next/image";
 import techsData from "./techsData";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 const Technologies = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [animate, setAnimate] = useState(false);
-  const animationFrame = useRef<NodeJS.Timeout | null>(null);
-
-  useEffect(() => {
-    setAnimate(true);
-    const cycle = () => {
-      const randomIndex = Math.floor(Math.random() * techsData.length);
-      setHoveredIndex((prevIndex) => (prevIndex === randomIndex ? null : randomIndex));
-
-      animationFrame.current = setTimeout(cycle, 3000);
-    };
-
-    animationFrame.current = setTimeout(cycle, 3000);
-
-    return () => {
-      if (animationFrame.current) clearTimeout(animationFrame.current);
-    };
-  }, []);
 
   return (
     <section className="relative overflow-hidden pt-16">
@@ -35,11 +17,7 @@ const Technologies = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <Header />
-            <div
-              className={`bg-opacity-80 dark:bg-opacity-80 grid grid-cols-2 items-center justify-center gap-5 rounded-2xl border border-gray-100 bg-white px-8 py-10 shadow-[0_8px_32px_rgba(0,0,0,0.05)] backdrop-blur-sm transition-all duration-500 ease-in-out sm:flex sm:flex-wrap dark:border-gray-800 dark:bg-gray-900 dark:shadow-[0_8px_32px_rgba(0,0,0,0.2)] ${
-                animate ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-              }`}
-            >
+            <div className="bg-opacity-80 dark:bg-opacity-80 grid grid-cols-2 items-center justify-center gap-5 rounded-2xl border border-gray-100 bg-white px-8 py-10 shadow-[0_8px_32px_rgba(0,0,0,0.05)] backdrop-blur-sm transition-all duration-500 ease-in-out sm:flex sm:flex-wrap dark:border-gray-800 dark:bg-gray-900 dark:shadow-[0_8px_32px_rgba(0,0,0,0.2)]">
               {techsData.map((tech, index) => (
                 <SingleTech
                   key={tech.id}

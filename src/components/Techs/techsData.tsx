@@ -21,16 +21,18 @@ const techsData: Tech[] = [
   },
   {
     id: 4,
+    name: "Laravel",
+    href: "https://laravel.com",
+    image: "/images/techs/laravel-icon.svg",
+    
+  },
+  {
+    id: 5,
     name: "MySQL",
     href: "https://www.mysql.com",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   },
-  {
-    id: 5,
-    name: "Laravel",
-    href: "https://laravel.com",
-    image: "/images/techs/laravel.svg",
-  },
+
   {
     id: 6,
     name: "PHP",
