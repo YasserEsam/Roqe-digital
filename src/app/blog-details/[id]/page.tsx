@@ -1,4 +1,3 @@
-// src/app/blog-details/[id]/page.tsx
 import { Metadata } from "next";
 import Image from "next/image";
 import blogData from "@/components/Blog/blogData";
@@ -15,10 +14,10 @@ interface BlogDetailsProps {
 export async function generateMetadata(
   props: { params: { id: string } }
 ): Promise<Metadata> {
-  // Must await the params object
-  const { id } = await props.params;
+  // Await the params object
+  const { id } = await props.params; // Await here
   const blog = blogData.find((blog) => blog.id === parseInt(id));
-  
+
   return {
     title: blog?.title || "تفاصيل المقال",
     description: blog?.paragraph || "صفحة تفاصيل المقال",
@@ -26,15 +25,14 @@ export async function generateMetadata(
 }
 
 async function BlogDetailsPage({ params }: BlogDetailsProps) {
-  // Must await the params object
-  const { id } = await params;
+  // Await the params object
+  const { id } = await params; // Await here
   const blog = blogData.find((blog) => blog.id === parseInt(id));
 
   if (!blog) return <div>المقال غير موجود</div>;
 
   const wordCount = blog.content.split(/\s+/).length;
   const readingTime = Math.ceil(wordCount / 200);
-  
   return (
     <section className="pt-[150px] pb-[120px]">
       <div className="container">
