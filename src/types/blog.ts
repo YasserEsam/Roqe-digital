@@ -22,6 +22,8 @@ export type Blog = {
     comments: number;  // Number of comments
     shares: number;    // Number of social shares
   };
+
+  quote: string;
   
   // Optional fields you might want to add later:
   /*

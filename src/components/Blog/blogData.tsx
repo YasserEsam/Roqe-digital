@@ -37,9 +37,11 @@ const blogData: Blog[] = [
     stats: {
       views: 1245,
       comments: 28,
-      shares: 142
-    }
+      shares: 142,
+    },
+    quote: "البساطة هي جوهر الأداء العالي – وهذا ما يحققه Next.js ببراعة.",
   },
+
   {
     id: 2,
     title: "كيف يُغيّر الذكاء الاصطناعي مستقبل البرمجة؟",
@@ -75,8 +77,10 @@ const blogData: Blog[] = [
     stats: {
       views: 2873,
       comments: 42,
-      shares: 356
-    }
+      shares: 356,
+    },
+    quote:
+      "الذكاء الاصطناعي لا يستبدل المبرمجين، بل يمكّنهم من الابتكار بشكل أسرع.",
   },
   {
     id: 3,
@@ -116,8 +120,10 @@ const blogData: Blog[] = [
     stats: {
       views: 1892,
       comments: 35,
-      shares: 214
-    }
+      shares: 214,
+    },
+    quote:
+      "التصميم الجيد هو التصميم غير الملحوظ. التركيز على سهولة الاستخدام ووضوح العناصر يقلل من الحمل المعرفي على المستخدم.",
   },
   {
     id: 4,
@@ -162,9 +168,10 @@ const blogData: Blog[] = [
     stats: {
       views: 2310,
       comments: 47,
-      shares: 298
-    }
-  }
+      shares: 298,
+    },
+    quote: "اختيار الإطار الصحيح هو نصف الطريق نحو تطبيق ناجح.",
+  },
 ];
 
 export default blogData;
