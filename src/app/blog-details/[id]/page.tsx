@@ -15,7 +15,7 @@ interface BlogDetailsProps {
 export async function generateMetadata(
   props: { params: { id: string } }
 ): Promise<Metadata> {
-  // Await the params object before accessing its properties
+  // Must await the params object
   const { id } = await props.params;
   const blog = blogData.find((blog) => blog.id === parseInt(id));
   
@@ -26,7 +26,7 @@ export async function generateMetadata(
 }
 
 async function BlogDetailsPage({ params }: BlogDetailsProps) {
-  // Await the params object before accessing its properties
+  // Must await the params object
   const { id } = await params;
   const blog = blogData.find((blog) => blog.id === parseInt(id));
 
@@ -34,7 +34,7 @@ async function BlogDetailsPage({ params }: BlogDetailsProps) {
 
   const wordCount = blog.content.split(/\s+/).length;
   const readingTime = Math.ceil(wordCount / 200);
-
+  
   return (
     <section className="pt-[150px] pb-[120px]">
       <div className="container">
