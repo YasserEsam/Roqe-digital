@@ -43,8 +43,8 @@ const BlogDetailsPage = ({ params }: BlogDetailsProps) => {
               {/* Author & Stats */}
               <div className="border-body-color/10 mb-10 flex flex-wrap items-center justify-between border-b pb-4 dark:border-white/10">
                 <div className="flex flex-wrap items-center">
-                  <div className="mr-10 mb-5 flex items-center">
-                    <div className="relative mr-4 h-10 w-10 overflow-hidden rounded-full">
+                  <div className="ml-10 mb-5 flex items-center">
+                    <div className="relative ml-4 h-10 w-10 overflow-hidden rounded-full">
                       <Image
                         src={blog.author.image}
                         alt={blog.author.name}
@@ -57,20 +57,20 @@ const BlogDetailsPage = ({ params }: BlogDetailsProps) => {
                     </span>
                   </div>
                   <div className="mb-5 flex items-center">
-                    <p className="text-body-color mr-5 flex items-center text-base font-medium">
-                      <Calendar className="mr-3 h-4 w-4" />
+                    <p className="text-body-color ml-5 flex items-center text-base font-medium">
+                      <Calendar className="ml-3 h-4 w-4" />
                       {blog.publishDate}
                     </p>
-                    <p className="text-body-color mr-5 flex items-center text-base font-medium">
-                      <MessageSquare className="mr-3 h-4 w-4" />
+                    <p className="text-body-color ml-5 flex items-center text-base font-medium">
+                      <MessageSquare className="ml-3 h-4 w-4" />
                       {blog.stats.comments}
                     </p>
-                    <p className="text-body-color mr-5 flex items-center text-base font-medium">
-                      <Eye className="mr-3 h-4 w-4" />
+                    <p className="text-body-color ml-5 flex items-center text-base font-medium">
+                      <Eye className="ml-3 h-4 w-4" />
                       {blog.stats.views}
                     </p>
                     <p className="text-body-color flex items-center text-base font-medium">
-                      <Clock className="mr-3 h-4 w-4" />
+                      <Clock className="ml-3 h-4 w-4" />
                       {readingTime} دقيقة قراءة
                     </p>
                   </div>
