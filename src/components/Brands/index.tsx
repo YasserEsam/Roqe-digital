@@ -37,7 +37,7 @@ const Brands = () => {
             </div>
 
             <div 
-              className={`flex gap-5 flex-wrap items-center justify-center rounded-2xl 
+              className={`flex gap-6 flex-wrap items-center justify-center rounded-2xl 
                 bg-white bg-opacity-80 backdrop-blur-sm px-8 py-10 
                 dark:bg-gray-900 dark:bg-opacity-80 
                 shadow-[0_8px_32px_rgba(0,0,0,0.05)] 
