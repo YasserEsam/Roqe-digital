@@ -1,41 +1,126 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const NewsLatterBox = () => {
   const { theme } = useTheme();
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState({ text: "", type: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setMessage({ text: "", type: "" });
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_NEWSLETTER_TEMPLATE_ID, // Create a separate template for newsletters
+        {
+          name,
+          email
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+      );
+
+      setMessage({
+        text: "تم الاشتراك بنجاح! شكراً لك.",
+        type: "success"
+      });
+      setName("");
+      setEmail("");
+    } catch (error) {
+      console.error("Subscription error:", error);
+      setMessage({
+        text: "حدث خطأ أثناء محاولة الاشتراك. يرجى المحاولة مرة أخرى.",
+        type: "error"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  // Auto-dismiss messages after 5 seconds
+  useEffect(() => {
+    if (message.text) {
+      const timer = setTimeout(() => {
+        setMessage({ text: "", type: "" });
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [message]);
 
   return (
     <div className="shadow-three dark:bg-gray-dark relative z-10 rounded-xs bg-white p-8 sm:p-11 lg:p-8 xl:p-11">
-      <h3 className="mb-4 text-2xl leading-tight font-bold text-black dark:text-white">
-      اشترك لتصلك آخر التحديثات
+      <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
+        اشترك لتصلك آخر التحديثات
       </h3>
-      <p className="border-body-color/25 text-body-color mb-11 border-b pb-11 text-base leading-relaxed dark:border-white/25">
-      ابقَ على اطلاع دائم بكل جديد. اشترك الآن لتصلك أحدث الأخبار والعروض مباشرة إلى بريدك.
+      <p className="text-body-color border-body-color/25 mb-11 border-b pb-11 text-base leading-relaxed dark:border-white/25">
+        ابقَ على اطلاع دائم بكل جديد. اشترك الآن لتصلك أحدث الأخبار والعروض مباشرة إلى بريدك.
       </p>
-      <div>
+
+      {/* Status Message */}
+      {message.text && (
+        <div className={`mb-6 rounded-xs p-4 ${
+          message.type === "success" 
+            ? "bg-green-50 text-green-800 border border-green-200" 
+            : "bg-red-50 text-red-800 border border-red-200"
+        }`}>
+          <div className="flex items-start">
+            <div className={`flex-shrink-0 mr-3 text-lg ${
+              message.type === "success" ? "text-green-500" : "text-red-500"
+            }`}>
+              {message.type === "success" ? "✓" : "!"}
+            </div>
+            <div className="flex-1">
+              <p className="font-medium">{message.text}</p>
+            </div>
+            <button 
+              onClick={() => setMessage({ text: "", type: "" })}
+              className="text-gray-400 hover:text-gray-500"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
+
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           placeholder="أدخل اسمك"
           className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary mb-4 w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+          required
         />
         <input
           type="email"
           name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="أدخل بريدك الإلكتروني"
           className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary mb-4 w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+          required
         />
-        <input
+        <button
           type="submit"
-          value="اشترك الآن"
-          className="bg-primary shadow-submit hover:bg-primary/90 dark:shadow-submit-dark mb-5 flex w-full cursor-pointer items-center justify-center rounded-xs px-9 py-4 text-base font-medium text-white duration-300"
-        />
+          disabled={isSubmitting}
+          className="bg-primary shadow-submit hover:bg-primary/90 dark:shadow-submit-dark mb-5 flex w-full cursor-pointer items-center justify-center rounded-xs px-9 py-4 text-base font-medium text-white duration-300 disabled:opacity-50"
+        >
+          {isSubmitting ? "جاري المعالجة..." : "اشترك الآن"}
+        </button>
         <p className="text-body-color dark:text-body-color-dark text-center text-base leading-relaxed">
-        نحن نكره الرسائل المزعجة أيضًا، لذا لا تقلق – لن نرسل لك أي بريد مزعج.
+          نحن نكره الرسائل المزعجة أيضًا، لذا لا تقلق – لن نرسل لك أي بريد مزعج.
         </p>
-      </div>
+      </form>
 
+      {/* Decorative elements */}
       <div>
         <span className="absolute top-7 left-2">
           <svg
