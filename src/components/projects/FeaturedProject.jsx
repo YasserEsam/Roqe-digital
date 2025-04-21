@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const FeaturedProject = () => (
   <div
     data-aos="fade-up"
@@ -5,12 +7,15 @@ const FeaturedProject = () => (
     className="mb-16 overflow-hidden rounded-2xl bg-white shadow-lg dark:bg-gray-800 dark:shadow-gray-800"
   >
     <div className="flex flex-col lg:flex-row">
-      <div className="relative w-full overflow-hidden lg:w-7/12">
-        <div className="from-primary/80 to-primary/20 absolute inset-0 z-10 bg-gradient-to-r opacity-90" />
-        <img
+      <div className="relative h-90 w-full overflow-hidden lg:w-7/12">
+        <div className="from-primary/80 to-primary/20 absolute inset-0 z-10 bg-gradient-to-r opacity-40" />
+        <Image
           src="https://raw.githubusercontent.com/ahmedalsanadi/Movie-Streaming-App/refs/heads/dev/screenshots/image-1.png"
+          fill
           alt="Movie Streaming Project"
-          className="h-full w-full transform object-cover object-center transition-transform duration-700 hover:scale-110"
+          className="object-cover object-center transition-transform duration-700 hover:scale-110"
+            style={{ objectFit: "cover" }}
+            sizes="(max-width: 768px) 100vw, 50vw"
         />
         <div className="absolute top-0 left-0 z-20 p-6">
           <span className="text-primary rounded-full bg-white px-4 py-1 text-sm font-semibold dark:bg-gray-900">
@@ -21,10 +26,12 @@ const FeaturedProject = () => (
 
       <div className="flex w-full flex-col justify-center p-8 lg:w-5/12">
         <h3 className="mb-4 text-2xl font-bold text-black dark:text-white">
-       "تطبيق بث الأفلام"
+          تطبيق بث الأفلام
         </h3>
         <p className="text-body-color dark:text-body-color-dark mb-6">
-        تطبيق متكامل لبث الأفلام مع ميزات متقدمة مثل البحث المتطور وقوائم المشاهدة الشخصية ودعم تعدد اللغات ونظام المصادقة. مبني باستخدام Next.js وReact وTailwind CSS ..
+          تطبيق متكامل لبث الأفلام مع ميزات متقدمة مثل البحث المتطور وقوائم
+          المشاهدة الشخصية ودعم تعدد اللغات ونظام المصادقة. مبني باستخدام
+          Next.js وReact وTailwind CSS ..
         </p>
 
         <div className="mb-6 flex flex-wrap gap-2">

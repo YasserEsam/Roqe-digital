@@ -2,70 +2,10 @@ import SectionHeading from "./SectionHeading";
 import ProjectFilter from "./ProjectFilter";
 import FeaturedProject from "./FeaturedProject";
 import ProjectCard from "./ProjectCard";
+import projects from "./projectData";
 
 const PortfolioSection = () => {
-  const projects = [
-    {
-      title: "تطبيق بث الأفلام",
-      description:
-        "تطبيق متكامل لبث الأفلام مع ميزات متقدمة مثل البحث المتطور وقوائم المشاهدة الشخصية ودعم تعدد اللغات ونظام المصادقة. مبني باستخدام Next.js وReact وTailwind CSS",
-      image: "https://raw.githubusercontent.com/ahmedalsanadi/Movie-Streaming-App/refs/heads/dev/screenshots/image-8.png", 
-      category: "تطبيق ويب",
-      link: "https://github.com/ahmedalsanadi/Movie-Streaming-App",
-      liveLink: "https://movie-streaming-app-virid.vercel.app",
-      tags: ["Next.js", "React", "Tailwind CSS", "Firebase", "i18n"],
-    },
-    {
-      title: "منصة التوظيف بيكسل",
-      description:
-        "تطبيق ويب مبني بـ Laravel لإدارة الوظائف والتقديم عليها، يتضمن ملفات تعريف لأصحاب العمل، وأوصاف وظيفية مفصلة، ووظائف التقديم. مبني باستخدام Laravel وTailwind CSS",
-      image: "https://raw.githubusercontent.com/ahmedalsanadi/Pixel-Job-App-Site/refs/heads/main/screenshots/hero.png",
-      category: "تطبيق ويب",
-      link: "https://github.com/ahmedalsanadi/Pixel-Job-App-Site",
-      liveLink: "",
-      tags: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
-    },
-    {
-      title: "صفحة بيكاس",
-      description:
-        "صفحة هبوط حديثة لأداة إنتاجية، تتميز بتصميم نظيف وتنقل سهل. تسلط الضوء على قيمة المنصة من خلال شعارات العملاء والميزات الأساسية",
-      image: "https://raw.githubusercontent.com/ahmedalsanadi/Biccas-Landing-Page-Ahmed-Al-Sanadi/refs/heads/main/screenshots/landing.png",
-      category: "صفحة هبوط",
-      link: "https://github.com/ahmedalsanadi/Biccas-Landing-Page-Ahmed-Al-Sanadi",
-      liveLink: "",
-      tags: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      title: "لوحة تحكم فينبيز المالية",
-      description:
-        "لوحة تحكم مالية مبنية على React تتميز برسوم بيانية تفاعلية (Chart.js)، وحركات سلسة (AOS)، وتصميم متجاوب (Tailwind CSS) لتحسين تجربة المستخدم",
-      image: "https://raw.githubusercontent.com/ahmedalsanadi/FinBiz/refs/heads/main/screenshots/hero.png",
-      category: "لوحة تحكم",
-      link: "https://github.com/ahmedalsanadi/FinBiz",
-      liveLink: "",
-      tags: ["React", "Chart.js", "Tailwind CSS", "AOS"],
-    },
-    {
-      title: "تطبيق تويتر",
-      description:
-        "تطبيق ويب متكامل مصمم لمحاكاة الوظائف الأساسية لمنصة التواصل الاجتماعي الشهيرة تويتر",
-      image: "https://private-user-images.githubusercontent.com/76667739/373466344-4964ae58-97ff-4828-a012-b468ffdf9b13.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDUxMTM0ODgsIm5iZiI6MTc0NTExMzE4OCwicGF0aCI6Ii83NjY2NzczOS8zNzM0NjYzNDQtNDk2NGFlNTgtOTdmZi00ODI4LWEwMTItYjQ2OGZmZGY5YjEzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDIwVDAxMzk0OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdmNGI1NWFlNDM4NjFjMjJiZGRkOGYwYzE0NDlkM2FjYzdjNjRlM2U1NDc0NjQxOGNmMGUxN2MzYzQzMmQ0OTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ZJYpxginNDIJrJq5pl2E4aj8RCghWIw4QvS-IGsq0rE",
-      category: "تطبيق ويب",
-      link: "https://github.com/ahmedalsanadi/twitter-app",
-      liveLink: "",
-      tags: ["TypeScript", "React", "Next.js"],
-    },
-    {
-      title: "تطبيق المدونة",
-      description:
-        "منصة مدونة بسيطة مبنية على PHP لإنشاء وإدارة المقالات. تتضمن مصادقة المستخدمين، وتحميل الصور، والفئات والعلامات، وتصميم متجاوب",
-      image: "https://raw.githubusercontent.com/ahmedalsanadi/My-blog/refs/heads/main/screenshots/image.png",
-      category: "تطبيق ويب",
-      link: "https://github.com/ahmedalsanadi/My-blog",
-      liveLink: "",
-      tags: ["PHP", "MySQL", "Bootstrap"],
-    },
-  ];
+
 
   return (
     <section

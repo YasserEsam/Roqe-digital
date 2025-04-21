@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const ProjectCard = ({ project, delay }) => {
   const { title, description, image, category, link, tags } = project;
 
@@ -7,12 +9,17 @@ const ProjectCard = ({ project, delay }) => {
       data-aos-delay={delay}
       className="group overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:shadow-gray-800"
     >
-      <div className="relative overflow-hidden">
-        <img
-          src={image}
-          alt={title}
-          className="h-full w-full transform object-cover transition-transform duration-500 group-hover:scale-110"
-        />
+      <div className="relative h-auto overflow-hidden">
+        <div className="relative aspect-[16/9] overflow-hidden">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+            style={{ objectFit: "cover" }}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
         <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <div className="flex w-full items-center justify-between p-6">
             <span className="text-sm font-medium text-white">{category}</span>
