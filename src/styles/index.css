@@ -6,6 +6,22 @@ layer(base);
 
 @custom-variant dark (&:is(.dark *));
 
+
+.typing-cursor::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
 @theme {
   --breakpoint-*: initial;
   --breakpoint-xs: 450px;
