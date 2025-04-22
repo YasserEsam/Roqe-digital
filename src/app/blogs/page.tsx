@@ -18,12 +18,11 @@ const ProjectsPage = () => {
 
       <section className="pt-[120px] pb-[120px]">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap justify-center">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
             {blogData.map((blog) => (
               <div
                 key={blog.id}
-                className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
-              >
+                className="w-full"              >
                 <SingleBlog blog={blog} />
               </div>
             ))}
