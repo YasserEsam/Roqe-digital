@@ -16,13 +16,13 @@ const menuData: Menu[] = [
   {
     id: 3,
     title: "أعمالنا السابقة",
-    path: "/portfolio",
+    path: "/projects",
     newTab: false,
   },
   {
     id: 4,
     title: "المدونة",
-    path: "/blog-sidebar",
+    path: "/blogs",
     newTab: false,
   },
   {
