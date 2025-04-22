@@ -33,7 +33,7 @@ const ProjectsPage = () => {
               <div className="mx-auto max-w-[800px] text-center">
                 {/* Badge */}
                 <div className="bg-opacity-10 bg-primary/10 mb-4 inline-block rounded-lg px-5 py-2">
-                  <span className=" text-purple-500 dark:text-purple-300 text-sm font-semibold">
+                  <span className=" text-black dark:text-white text-sm font-semibold">
                     معرض اعمالنا
                   </span>
                 </div>
@@ -41,7 +41,7 @@ const ProjectsPage = () => {
                 {/* Header */}
                 <h1
                   data-aos="fade-in"
-                  className="mb-5 bg-gradient-to-r from-purple-500 to-pink-300 bg-clip-text text-3xl leading-tight font-bold text-transparent sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight"
+                  className="mb-5 text-black dark:text-white text-3xl leading-tight font-bold  sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight"
                 >
                   نبتكر مشاريع
                   <br />
