@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-const ProjectCard = ({ project, delay }) => {
+const ProjectCard = ({ project }) => {
   const { title, description, image, category, link, tags } = project;
 
   return (
     <div
       data-aos="fade-up"
-      data-aos-delay={delay}
+  
       className="group overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-gray-800 dark:shadow-gray-800"
     >
       <div className="relative h-auto overflow-hidden">

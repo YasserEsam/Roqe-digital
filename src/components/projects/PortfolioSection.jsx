@@ -17,21 +17,21 @@ const PortfolioSection = () => {
           title="أعمالنا المميزة"
           subtitle="نقدم لكم مجموعة من أفضل المشاريع..."
         />
-        <ProjectFilter />
+        {/* <ProjectFilter /> */}
         <FeaturedProject />
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
               project={project}
-              delay={400 + index * 100}
+              
             />
           ))}
 
           {/* Project Card 6 - CTA */}
           <div
             data-aos="fade-up"
-            data-aos-delay="900"
+            
             className="group from-primary/90 overflow-hidden rounded-xl bg-gradient-to-br to-purple-600/90 text-white shadow-lg transition-all duration-300 hover:shadow-xl dark:shadow-gray-800"
           >
             <div className="flex h-full flex-col items-center justify-center p-8 text-center">
