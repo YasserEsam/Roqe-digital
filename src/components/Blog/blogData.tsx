@@ -6,7 +6,7 @@ const blogData: Blog[] = [
     title: "Next.js 14: الثورة الجديدة في تطوير الويب الحديث",
     paragraph:
       "مع إطلاق Next.js 15، أصبح الإطار أكثر قوة مع ميزات مثل Server Actions، Partial Prerendering، اكتشف كيف يمكنك بناء تطبيقات أسرع  مع استهلاك أقل للموارد.",
-    image: "/images/blog/blog-01.jpg",
+    image: "/images/blog/nextjs.png",
     author: {
       name: "أحمد السنادي",
       image: "/images/blog/author-04.jpg",
@@ -66,7 +66,7 @@ const blogData: Blog[] = [
     title: "GPT-5 والثورة القادمة في تطوير البرمجيات",
     paragraph:
       "مع اقتراب إطلاق GPT-5، كيف سيغير المشهد البرمجي؟ تحليل عميق لتأثير الذكاء الاصطناعي المتقدم على مهنة البرمجة وأدوات التطوير المستقبلية.",
-    image: "/images/blog/blog-02.jpg",
+    image: "/images/blog/GPT.png",
     author: {
       name: "ياسر العريقي",
       image: "/images/blog/yasser-image.png",
@@ -128,7 +128,7 @@ const blogData: Blog[] = [
     title: "تصميم الويب في عصر الذكاء الاصطناعي: 2024 وما بعده",
     paragraph:
       "كيف تغير أدوات التصميم المدعومة بالذكاء الاصطناعي قواعد اللعبة؟ استكشاف أحدث أدوات التصميم الذكية وتأثيرها على سير العمل ومهارات المصممين المطلوبة.",
-    image: "/images/blog/blog-03.jpg",
+    image: "/images/blog/webai.png",
     author: {
       name: "أحمد السنادي",
       image: "/images/blog/author-04.jpg",
@@ -191,7 +191,7 @@ const blogData: Blog[] = [
     title: "إطارات عمل JavaScript 2024: دليل الاختيار الاستراتيجي",
     paragraph:
       "في بحر الخيارات المتاحة، كيف تختار الإطار الأمثل لمشروعك؟ تحليل مفصل لأحدث إصدارات React، Vue، Svelte، وQwik مع مقارنة أداء حقيقية.",
-    image: "/images/blog/blog-01.jpg",
+    image: "/images/blog/jsframeworks.png",
     author: {
       name: "ياسر العريقي",
       image: "/images/blog/yasser-image.png",
