@@ -19,9 +19,7 @@ const TermsPage = () => {
           <p className="mb-6 text-body-color text-base font-medium leading-loose sm:text-lg">
             من خلال الوصول إلى هذا الموقع أو استخدامه، فإنك توافق على الالتزام بجميع الشروط والأحكام المنصوص عليها هنا. يُحظر استخدام الموقع لأي أغراض غير قانونية، أو تنتهك القوانين المحلية أو الدولية، أو تسيء إلى المستخدمين الآخرين أو تضر بالخدمة أو بالخوادم.
           </p>
-          <p className="mb-6 text-body-color text-base font-medium leading-loose sm:text-lg">
-            نحتفظ بالحق في تعليق أو إنهاء حسابك أو وصولك للخدمة في حال انتهاكك لأي من الشروط دون إشعار مسبق.
-          </p>
+         
 
           <h2 className="mb-4 text-2xl font-bold text-black dark:text-white">حقوق الملكية الفكرية</h2>
           <p className="mb-6 text-body-color text-base font-medium leading-loose sm:text-lg">
@@ -30,7 +28,7 @@ const TermsPage = () => {
 
           <h2 className="mb-4 text-2xl font-bold text-black dark:text-white">حدود المسؤولية</h2>
           <p className="text-body-color text-base font-medium leading-loose sm:text-lg">
-            نحن لا نتحمل مسؤولية أي أضرار مباشرة أو غير مباشرة ناتجة عن استخدامك للموقع أو عدم قدرتك على الوصول إليه، بما في ذلك فقدان البيانات أو الأرباح.
+            نحن لا نتحمل مسؤولية أي أضرار مباشرة أو غير مباشرة ناتجة عن استخدامك للموقع أو عدم قدرتك على الوصول إليه.
           </p>
         </div>
       </section>
