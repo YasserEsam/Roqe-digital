@@ -30,10 +30,7 @@ const projects = [
     description:
       "لوحة تحكم مالية مبنية على React تتميز برسوم بيانية تفاعلية (Chart.js)، وحركات سلسة (AOS)، وتصميم متجاوب (Tailwind CSS) لتحسين تجربة المستخدم",
     image: "/images/mockups/Untitled design (3).png",
-    images: [
-      "/images/mockups/Untitled design (3).png",
-      
-    ],
+    images: ["/images/mockups/Untitled design (3).png"],
     category: "موقع ويب",
     link: "https://finbiz-design.netlify.app/",
     liveLink: "https://finbiz-design.netlify.app/",
@@ -66,19 +63,24 @@ const projects = [
   },
   {
     id: 6,
+    title: "أداة إدارة المشاريع - Kanban",
+    description:
+      "أداة لإدارة المشاريع تدعم طريقة كانبان لتتبع المهام. توفر إنشاء أعمدة وبطاقات وسحب وإفلات، بالإضافة إلى إمكانية دعوة أعضاء الفريق وتتبع تقدم المشروع. مبنية باستخدام Next.js للواجهة الأمامية وLaravel للـ API.",
+    image: "/images/mockups/Untitled design (6).png",
+    images: ["/images/mockups/Untitled design (6).png"],
+    category: "تطبيق ويب لإدارة المشاريع",
+    link: "https://github.com/ahmedalsanadi/project-management",
+    liveLink: "",
+    tags: ["Next.js", "Laravel", "Kanban", "Tailwind CSS", "API"],
+  },
+  {
+    id: 7,
     title: "منصة التوظيف بيكسل",
     description:
       "تطبيق ويب مبني بـ Laravel لإدارة الوظائف والتقديم عليها، يتضمن ملفات تعريف لأصحاب العمل، وأوصاف وظيفية مفصلة، ووظائف التقديم. مبني باستخدام Laravel وTailwind CSS",
-    image: "/images/projects/pixel-jobs/main.png",
+    image:  "/images/mockups/jobPosting.png",
     images: [
-      "/images/projects/pixel-jobs/1.png",
-      "/images/projects/pixel-jobs/2.png",
-      "/images/projects/pixel-jobs/3.png",
-      "/images/projects/pixel-jobs/4.png",
-      "/images/projects/pixel-jobs/5.png",
-      "/images/projects/pixel-jobs/6.png",
-      "/images/projects/pixel-jobs/7.png",
-      "/images/projects/pixel-jobs/8.png",
+      "/images/mockups/jobPosting.png"
     ],
     category: "تطبيق ويب",
     link: "https://github.com/ahmedalsanadi/Pixel-Job-App-Site",
@@ -86,22 +88,21 @@ const projects = [
     tags: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
   },
   {
-    id: 7,
+    id: 8,
     title: "صفحة بيكاس",
     description:
       "صفحة هبوط حديثة لأداة إنتاجية، تتميز بتصميم نظيف وتنقل سهل. تسلط الضوء على قيمة المنصة من خلال شعارات العملاء والميزات الأساسية",
     image: "/images/projects/biccas/main.png",
-    images: [
-"/images/projects/biccas/main.png",     
-    ],
+    images: ["/images/projects/biccas/main.png"],
     category: "صفحة هبوط",
     link: "https://ahmedalsanadi.github.io/Biccas-Landing-Page-Ahmed-Al-Sanadi/",
-    liveLink: "https://ahmedalsanadi.github.io/Biccas-Landing-Page-Ahmed-Al-Sanadi/",
+    liveLink:
+      "https://ahmedalsanadi.github.io/Biccas-Landing-Page-Ahmed-Al-Sanadi/",
     tags: ["HTML", "CSS", "JavaScript"],
   },
 
   {
-    id: 8,
+    id: 9,
     title: "تطبيق تويتر",
     description:
       "تطبيق ويب متكامل مصمم لمحاكاة الوظائف الأساسية لمنصة التواصل الاجتماعي الشهيرة تويتر",
