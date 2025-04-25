@@ -3,7 +3,7 @@ import Image from "next/image";
 const FeaturedProject = () => (
   <div
     data-aos="fade-up"
-    data-aos-delay="300"
+   
     className="mb-16 overflow-hidden rounded-2xl bg-white shadow-lg dark:bg-gray-800 dark:shadow-gray-800"
   >
     <div className="flex flex-col lg:flex-row">

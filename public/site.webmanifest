@@ -1,0 +1,17 @@
+
+{
+    "name": "روق",
+    "short_name": "روق",
+    "description": "وكالة رقمية متكاملة لبناء هويتك الرقمية",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1a1a1a",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "32x32",
+            "type": "image/x-icon"
+        }
+    ]
+  }

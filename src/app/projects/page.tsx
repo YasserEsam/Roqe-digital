@@ -23,25 +23,25 @@ const ProjectsPage = () => {
   return (
     <>
       <section
-        id="projects"
+        id="projects" 
         className="dark:bg-gray-dark relative z-10 overflow-hidden bg-gray-50 pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
       >
-        <div className="container">
+        <div className="container" data-aos="fade-in">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
                 {/* Header */}
               <div className="mx-auto max-w-[800px] text-center">
                 {/* Badge */}
                 <div className="bg-opacity-10 bg-primary/10 mb-4 inline-block rounded-lg px-5 py-2">
-                  <span className=" text-purple-500 dark:text-purple-300 text-sm font-semibold">
+                  <span className=" text-black dark:text-white text-sm font-semibold">
                     معرض اعمالنا
                   </span>
                 </div>
 
                 {/* Header */}
                 <h1
-                  data-aos="fade-in"
-                  className="mb-5 bg-gradient-to-r from-purple-500 to-pink-300 bg-clip-text text-3xl leading-tight font-bold text-transparent sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight"
+                  
+                  className="mb-5 text-black dark:text-white text-3xl leading-tight font-bold  sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight"
                 >
                   نبتكر مشاريع
                   <br />

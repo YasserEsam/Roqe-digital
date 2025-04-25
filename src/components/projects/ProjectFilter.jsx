@@ -8,7 +8,7 @@ const filters = [
 const ProjectFilter = () => (
   <div
     data-aos="fade-up"
-    data-aos-delay="200"
+    
     className="mb-12 flex flex-wrap items-center justify-center gap-3"
   >
     {filters.map((label, index) => (

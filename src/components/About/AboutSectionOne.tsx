@@ -52,13 +52,13 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-25/24 max-w-[500px] lg:ml-0">
                 <Image
-                  src="/images/about/about-image.svg"
+                  src="/images/about/about-image-website.svg"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:ml-0"
                 />
                 <Image
-                  src="/images/about/about-image-dark.svg"
+                  src="/images/about/about-image-website.svg"
                   alt="about-image"
                   fill
                   className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:ml-0"

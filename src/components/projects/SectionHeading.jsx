@@ -8,7 +8,7 @@ const SectionHeading = ({ title, subtitle }) => (
     </h2>
     <p
       data-aos="fade-up"
-      data-aos-delay="100"
+      
       className="text-body-color dark:text-body-color-dark mx-auto max-w-[700px] text-base sm:text-lg"
     >
       {subtitle}
