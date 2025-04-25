@@ -4,13 +4,11 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
 
-export default function ProjectGallery({ images, title }) {
+export default function ProjectGallery({ images = [], title }) {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalLoading, setIsModalLoading] = useState(true);
   const [loadedImages, setLoadedImages] = useState({});
   const modalRef = useRef(null);
-
-  if (!images || images.length === 0) return null;
 
   // Handle thumbnail image load completion
   const handleThumbnailLoad = useCallback((index) => {
@@ -62,6 +60,9 @@ export default function ProjectGallery({ images, title }) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selectedImage]);
 
+  // Early return after all hooks
+  if (!images || images.length === 0) return null;
+
   return (
     <div
       data-aos="fade-up"
@@ -88,7 +89,6 @@ export default function ProjectGallery({ images, title }) {
             }}
           >
             {/* Blurred Background */}
-
             <div
               className="absolute inset-0 bg-contain opacity-80 blur-sm"
               style={{
@@ -113,15 +113,14 @@ export default function ProjectGallery({ images, title }) {
                 className={`object-contain transition-opacity duration-300 ${loadedImages[index] ? "opacity-100" : "opacity-0"}`}
               />
             </div>
-             {/* Overlay for Hover */}
-             <div className="absolute inset-0 z-20 transition-all group-hover:bg-black/30" />
-             <div className="absolute inset-0  z-20 bg-black/0 transition-all duration-300 group-hover:bg-black/20 flex items-center justify-center">
+            {/* Overlay for Hover */}
+            <div className="absolute inset-0 z-20 transition-all group-hover:bg-black/30" />
+            <div className="absolute inset-0  z-20 bg-black/0 transition-all duration-300 group-hover:bg-black/20 flex items-center justify-center">
               <span className="scale-0 transition-transform duration-300 text-white bg-black/60 rounded-full p-3 group-hover:scale-100 ">
                 عرض
               </span>
             </div>
           </div>
-          
         ))}
       </div>
 
