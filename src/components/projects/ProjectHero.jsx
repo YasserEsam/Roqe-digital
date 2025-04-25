@@ -116,7 +116,7 @@ export default function ProjectHero({ project }) {
           </div>
 
           {/* Project details card - now responsive with better positioning */}
-          <div className={`absolute z-20 w-full max-w-lg rounded-xl bg-white/10 p-6 backdrop-blur-md transition-all duration-300 dark:bg-gray-900/60
+          <div className={`absolute lg:mr-2 z-20 w-full max-w-lg rounded-xl bg-white/10 p-6 backdrop-blur-md transition-all duration-300 dark:bg-gray-900/60
             ${isMobile ? 
               'static mx-auto mt-4 -translate-y-0' : 
               'right-8 bottom-8 lg:right-16 lg:bottom-16'}
