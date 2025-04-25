@@ -8,8 +8,7 @@ const ProjectCard = ({ project }) => {
     <Link
     
       href={`/projects/${id}`}
-      // href={link}
-      target="_blank"
+   
       rel="noopener noreferrer"
       data-aos="fade-up"
       className="group relative block overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-gray-800 dark:shadow-gray-800/50"
