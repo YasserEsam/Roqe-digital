@@ -374,9 +374,17 @@ const projects = [
       صفحة هبوط حديثة ومبتكرة لأداة إنتاجية تعتمد على الذكاء الاصطناعي. تم تصميم الصفحة لتقديم نظرة عامة جذابة عن المنتج مع التركيز على الميزات الرئيسية وقيمة العملاء. الصفحة مصممة لتحقيق أعلى معدلات التحويل مع الحفاظ على تجربة مستخدم ممتازة.
     `,
     image: "/images/projects/biccas/main.png",
-    images: ["/images/projects/biccas/main.png"],
+    images: [
+      "/images/projects/biccas/main.png",
+      "/images/projects/biccas/2.png",
+      "/images/projects/biccas/3.png",
+      "/images/projects/biccas/4.png",
+      "/images/projects/biccas/5.png",
+      "/images/projects/biccas/6.png",
+      "/images/projects/biccas/7.png",
+      "/images/projects/biccas/8.png",
+    ],
     category: "صفحة هبوط",
-    link: "https://ahmedalsanadi.github.io/Biccas-Landing-Page-Ahmed-Al-Sanadi/",
     link: "https://ahmedalsanadi.github.io/Biccas-Landing-Page-Ahmed-Al-Sanadi/",
     liveLink:
       "https://ahmedalsanadi.github.io/Biccas-Landing-Page-Ahmed-Al-Sanadi/",
