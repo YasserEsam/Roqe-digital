@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ProjectCard = ({ project }) => {
-  const { title, description, image, category, link, tags } = project;
+  const { title, description, image, category, link, tags , id } = project;
 
   return (
     <Link
-      href={link}
+    
+      href={`/projects/${id}`}
+      // href={link}
       target="_blank"
       rel="noopener noreferrer"
       data-aos="fade-up"
