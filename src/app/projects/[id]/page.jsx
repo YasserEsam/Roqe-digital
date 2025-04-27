@@ -10,7 +10,7 @@ import ProjectTechnologies from '@/components/projects/ProjectTechnologies';
 import ProjectTechStack from '@/components/projects/ProjectTechStack';
 import RelatedProjects from '@/components/projects/RelatedProjects';
 import CodeRepository from '@/components/projects/CodeRepository';
-import { BackgroundSvgs } from '@/components/projects/BackgroundSvgs';
+
 
 // ✅ Improve static path generation
 export const dynamicParams = false;
@@ -98,7 +98,7 @@ export default async function ProjectPage({ params }) {
 
   return (
     <div className="relative dark:bg-gray-dark overflow-hidden bg-gray-50 pt-16 pb-10 md:pb-16">
-      <BackgroundSvgs />
+
       <ProjectHero project={project} />
 
       <div className="container mx-auto px-4 mt-16">

@@ -42,7 +42,7 @@ export default function ProjectHero({ project }) {
         autoplay: {
           delay: 5000,
           disableOnInteraction: false,
-          pauseOnMouseEnter: !isMobile, 
+          pauseOnMouseEnter: !isMobile,
         },
         speed: 1000,
         pagination: {
@@ -72,18 +72,31 @@ export default function ProjectHero({ project }) {
   if (!isMounted) return null;
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full overflow-hidden">
       {project.images?.length > 0 ? (
         <>
-          <div ref={swiperRef} className="swiper h-[60vh] w-full md:h-[80vh]">
+          <div ref={swiperRef} className="swiper h-[60vh] w-full md:h-[90vh]">
             <div className="swiper-wrapper">
               {project.images.map((img, index) => (
                 <div
                   key={index}
                   className="swiper-slide relative h-full w-full"
                 >
-                  {/* Enhanced overlay with better gradient and opacity control */}
-                  <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/80 via-black/60 to-black/70" />
+                  {/* Updated overlay with more modern and sophisticated gradient approach */}
+                  <div className="absolute inset-0 z-10">
+                    {/* Base image blending layer */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 dark:to-black/40" />
+                    
+                    {/* Side gradient for image framing */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-gray-900/30 via-transparent to-gray-900/30 dark:from-black/50 dark:to-black/50" />
+                    
+                    {/* Top vignette effect */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-transparent dark:from-black/40" />
+                    
+                    {/* Enhanced backdrop for card visibility */}
+                    <div className="absolute bottom-0 right-0 h-2/3 w-full bg-gradient-to-t from-gray-100/70 to-transparent dark:from-black/80 dark:to-transparent md:w-2/3 lg:w-1/2" />
+                  </div>
+                  
                   <Image
                     src={img}
                     alt={`${project.title} - صورة ${index + 1}`}
@@ -96,11 +109,13 @@ export default function ProjectHero({ project }) {
               ))}
             </div>
 
-            <div className="swiper-pagination absolute bottom-6 z-20 !flex items-center justify-center gap-1"></div>
+            {/* Enhanced pagination dots */}
+            <div className="swiper-pagination absolute bottom-6 z-20 !flex items-center justify-center gap-1.5"></div>
 
+            {/* Refined navigation buttons */}
             <button
               ref={nextRef}
-              className="absolute top-1/2 left-4 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition-all hover:bg-white/30 hover:scale-110 active:scale-95"
+              className="absolute top-1/2 left-4 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all hover:scale-110 hover:bg-white/20 active:scale-95 dark:bg-black/30 dark:hover:bg-black/40"
               aria-label="السابق"
             >
               <ChevronLeft className="h-6 w-6" />
@@ -108,63 +123,76 @@ export default function ProjectHero({ project }) {
 
             <button
               ref={prevRef}
-              className="absolute top-1/2 right-4 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition-all hover:bg-white/30 hover:scale-110 active:scale-95"
+              className="absolute top-1/2 right-4 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all hover:scale-110 hover:bg-white/20 active:scale-95 dark:bg-black/30 dark:hover:bg-black/40"
               aria-label="التالي"
             >
               <ChevronRight className="h-6 w-6" />
             </button>
           </div>
 
-          {/* Project details card - now responsive with better positioning */}
-          <div className={`absolute lg:mr-2 z-20 w-full max-w-lg rounded-xl bg-white/10 p-6 backdrop-blur-md transition-all duration-300 dark:bg-gray-900/60
-            ${isMobile ? 
-              'static mx-auto mt-4 -translate-y-0' : 
-              'right-8 bottom-8 lg:right-16 lg:bottom-16'}
-          `}>
-            <div className="mb-2 flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-purple-500/20 px-3 py-1 text-sm font-medium text-purple-600 dark:bg-purple-500/10 dark:text-purple-400">
-                {project.category}
-              </span>
-              {project.tags.slice(0, 3).map((tag, index) => (
-                <span
-                  key={index}
-                  className="rounded-full bg-blue-100 px-2 py-1 text-xs text-blue-800 dark:bg-blue-900/30 dark:text-blue-200"
-                >
-                  {tag}
+          {/* Completely redesigned project details card */}
+          <div
+            className={`z-20 rounded-xl transition-all duration-500 overflow-hidden
+              ${isMobile
+                ? "relative mx-auto -mt-16 w-11/12 max-w-lg"
+                : "absolute right-8 bottom-8 w-full max-w-md lg:right-12 lg:bottom-12 xl:max-w-lg"
+              }`}
+          >
+            {/* Card with frosted glass effect and border glow */}
+            <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/70 p-6 shadow-lg backdrop-blur-md dark:bg-gray-900/80 dark:shadow-black/20">
+              {/* Subtle animated accent glow */}
+              <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 blur-3xl filter dark:from-purple-500/10 dark:to-pink-500/10"></div>
+              <div className="absolute -bottom-16 -left-16 h-40 w-40 rounded-full bg-gradient-to-tr from-blue-500/20 to-teal-500/20 blur-3xl filter dark:from-blue-600/10 dark:to-teal-600/10"></div>
+              
+              {/* Enhanced tag section with refined spacing */}
+              <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">
+                <span className="rounded-full bg-purple-100 px-3 py-1 font-medium text-purple-700 ring-1 ring-purple-200/50 dark:bg-purple-950/40 dark:text-purple-300 dark:ring-purple-700/30">
+                  {project.category}
                 </span>
-              ))}
-            </div>
-
-            <h1 className="mb-2 text-2xl font-bold text-white md:text-3xl">
-              {project.title}
-            </h1>
-
-            <p className="mb-4 line-clamp-2 text-sm text-white/90 md:text-base">
-              {project.description}
-            </p>
-
-            <div className="flex flex-wrap items-center gap-4 text-sm text-white/80">
-              <div className="flex items-center gap-1">
-                <Calendar className="h-4 w-4" />
-                <span>تاريخ الإنجاز: {project.completionDate}</span>
+                {project.tags.slice(0, 3).map((tag, index) => (
+                  <span
+                    key={index}
+                    className="rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-800 ring-1 ring-blue-100/70 dark:bg-blue-950/40 dark:text-blue-300 dark:ring-blue-700/30"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
-              <div className="flex items-center gap-1">
-                <Clock className="h-4 w-4" />
-                <span>مدة التنفيذ: {project.duration}</span>
-              </div>
-            </div>
 
-            {project.liveLink && (
-              <a
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-1 rounded-lg bg-gradient-to-r from-purple-600 to-pink-500 px-4 py-2 text-sm font-medium text-white transition-all hover:from-purple-700 hover:to-pink-600 hover:shadow-lg"
-              >
-                مشاهدة المشروع
-                <ExternalLink className="h-4 w-4" />
-              </a>
-            )}
+              {/* Elegant typography with better spacing */}
+              <h1 className="mb-3 text-2xl font-bold text-gray-900 md:text-3xl dark:text-white">
+                {project.title}
+              </h1>
+
+              <p className="mb-4 line-clamp-2 text-sm leading-relaxed text-gray-700 md:text-base dark:text-gray-200">
+                {project.description}
+              </p>
+
+              {/* Refined metadata section */}
+              <div className="mb-4 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-gray-200/80 pt-3 text-sm text-gray-600 dark:border-gray-700/80 dark:text-gray-300">
+                <div className="flex items-center gap-1.5">
+                  <Calendar className="h-4 w-4 text-purple-500 dark:text-purple-400" />
+                  <span>تاريخ الإنجاز: {project.completionDate}</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <Clock className="h-4 w-4 text-blue-500 dark:text-blue-400" />
+                  <span>مدة التنفيذ: {project.duration}</span>
+                </div>
+              </div>
+
+              {/* Stylish CTA button */}
+              {project.liveLink && (
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-1 rounded-lg bg-gradient-to-r from-purple-600 to-pink-500 px-4 py-2.5 text-sm font-medium text-white transition-all hover:from-purple-700 hover:to-pink-600 hover:shadow-lg focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+                >
+                  <span>مشاهدة المشروع</span>
+                  <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                </a>
+              )}
+            </div>
           </div>
         </>
       ) : (

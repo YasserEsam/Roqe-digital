@@ -13,9 +13,12 @@ const projects = [
       "/images/mockups/Untitled design (4).png",
       "/images/projects/movie-streaming/main.png",
       "/images/projects/movie-streaming/image-1.png",
-      "/images/projects/movie-streaming/image.png",
       "/images/projects/movie-streaming/image-2.png",
       "/images/projects/movie-streaming/image-3.png",
+      "/images/projects/movie-streaming/image-5.png",
+      "/images/projects/movie-streaming/image-8.png",
+      "/images/projects/movie-streaming/image-11.png",
+      "/images/projects/movie-streaming/image.png",
     ],
 
     category: "موقع ويب متكامل",
@@ -180,7 +183,12 @@ const projects = [
     description:
       "منصة تدريبية تربط بين الشركات والموظفين مع لوحة تحكم متكاملة. تسلط الضوء على قيمة المنصة من خلال شعارات الشركات والميزات الأساسية",
     image: "/images/mockups/Untitled design (5).png",
-    images: ["/images/mockups/Untitled design (5).png"],
+    images: [
+      "/images/mockups/Untitled design (5).png",
+      "/images/projects/mosnad-platform/1.png",
+      "/images/projects/mosnad-platform/2.png",
+      "/images/projects/mosnad-platform/3.png",
+    ],
     category: "منصة ويب مع لوحة تحكم",
     link: "https://github.com/Mosnad-Web01/mosnad-platform",
     liveLink: "https://github.com/Mosnad-Web01/mosnad-platform",
