@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-              <TypingText text="انطلق بأعمالك نحو القمة مع رُقيّ ديجيتال" />
+                <TypingText text="انطلق بأعمالك نحو القمة مع رُقيّ ديجيتال" />
                 <p
                   data-aos="fade-in"
                   className="text-body-color dark:text-body-color-dark mb-12 text-base leading-relaxed! sm:text-lg md:text-xl"
@@ -27,16 +27,18 @@ const Hero = () => {
                   <Link
                     data-aos="fade-in"
                     href="https://nextjstemplates.com/templates/saas-starter-startup"
-                    className="bg-primary hover:bg-primary/80 rounded-xs px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
+                    className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#4A6CF7] to-[#A259F7] px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#4A6CF7]/30"
                   >
-                    ابدأ مشروعك الآن🔥
+                    <span className="relative z-10">ابدأ مشروعك الآن🔥</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#A259F7] to-[#4A6CF7] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                   </Link>
                   <Link
                     data-aos="fade-in"
                     href="https://github.com/NextJSTemplates/startup-nextjs"
-                    className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                    className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg border-2 border-[#4A6CF7] bg-transparent px-8 py-4 text-base font-semibold text-[#4A6CF7] transition-all duration-300 hover:scale-105 hover:bg-[#4A6CF7] hover:text-white dark:border-white/20 dark:text-white dark:hover:bg-white/10"
                   >
-                    اعمالنا السابقة
+                    <span className="relative z-10">اعمالنا السابقة</span>
+                    <div className="absolute inset-0 bg-[#4A6CF7] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                   </Link>
                 </div>
               </div>
