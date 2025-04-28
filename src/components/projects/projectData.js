@@ -22,17 +22,16 @@ const projects = [
     ],
 
     category: "موقع ويب متكامل",
-    link: "https://movies-website-pearl.vercel.app/en",
+    link: "",
     liveLink: "https://movies-website-pearl.vercel.app/en",
     tags: ["Next.js", "React", "Tailwind CSS", "Firebase", "i18n"],
-    completionDate: "15 مارس 2023",
-    duration: "3 أشهر",
+    completionDate: "15 مارس 2025",
+    duration: "2 أشهر",
     projectType: "تطبيق ويب تفاعلي",
     projectFeatures: [
       "واجهة مستخدم حديثة وسهلة الاستخدام",
       "نظام بحث متقدم مع تصفية حسب النوع والسنة والتقييم",
       "قوائم مشاهدة شخصية يمكن تخصيصها",
-      "نظام تقييم وتعليقات على الأفلام",
       "دعم تعدد اللغات (العربية والإنجليزية)",
       "مصادقة المستخدم باستخدام Firebase",
       "تصميم متجاوب يعمل على جميع الأجهزة",
@@ -56,7 +55,7 @@ const projects = [
       },
     ],
     techStack: {
-      frontend: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+      frontend: ["Next.js", "React", "Tailwind CSS"],
       backend: ["Firebase", "Firestore"],
       tools: ["Git", "GitHub", "VS Code", "Figma"],
     },
@@ -71,20 +70,19 @@ const projects = [
       "وكالة رقمية متخصصة في بناء المواقع الإلكترونية وتقديم حلول تقنية عصرية للشركات والأفراد.",
     image: "/images/mockups/Untitled design (1).png",
     images: ["/images/mockups/Untitled design (1).png"],
-    category: "تطبيق ويب",
-    link: "https://roqe-digital.vercel.app/",
+    category: "تطبيق ويب تعريفي",
+    link: "",
     liveLink: "https://roqe-digital.vercel.app/",
-    tags: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
-    completionDate: "20 فبراير 2023",
-    duration: "6 أسابيع",
+    tags: ["Next JS", "React JS", "Tailwind CSS", "Email JS" ],
+    completionDate: "25 ابريل 2025",
+    duration: "3 أسابيع",
     projectType: "موقع ويب",
     projectFeatures: [
       "تصميم عصري وجذاب يركز على تجربة المستخدم",
       "نظام إدارة محتوى مرن وسهل الاستخدام",
-      "دعم متعدد اللغات مع إمكانية التخصيص",
       "تحسين محركات البحث (SEO) لضمان ظهور الموقع في نتائج البحث",
-      "نظام أمان متقدم لحماية البيانات والمعلومات الحساسة",
       "توافق كامل مع جميع أحجام الشاشات والأجهزة",
+      "دعم الثيمات اللونية Dark Mode and Night Mode", 
     ],
 
     challenges: [
@@ -93,11 +91,7 @@ const projects = [
         solution: "استخدام تقنيات CSS الحديثة مثل Flexbox وGrid",
         result: "تجربة مستخدم سلسة على جميع أحجام الشاشات",
       },
-      {
-        challenge: "ضمان أمان البيانات والمعلومات الحساسة",
-        solution: "تنفيذ بروتوكولات أمان متقدمة وتشفير البيانات",
-        result: "حماية قوية ضد الهجمات الإلكترونية",
-      },
+  
       {
         challenge: "تحسين أداء الموقع وسرعة التحميل",
         solution:
@@ -106,8 +100,8 @@ const projects = [
       },
     ],
     techStack: {
-      frontend: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
-      backend: ["Laravel", "PHP", "MySQL"],
+      frontend: ["Next.js", "React",  "JavaScript", "Tailwind CSS"],
+      backend: ["Email JS"],
       tools: ["Git", "GitHub", "VS Code", "Figma"],
     },
     role: "مطور ومصمم الواجهة الأمامية",
@@ -136,42 +130,32 @@ const projects = [
       "/images/projects/finBiz/9.png",
     ],
     category: "موقع ويب",
-    link: "https://finbiz-design.netlify.app/",
+    link: "",
     liveLink: "https://finbiz-design.netlify.app/",
     tags: ["React", "Chart.js", "Tailwind CSS", "AOS"],
 
-    completionDate: "20 فبراير 2023",
-    duration: "6 أسابيع",
+    completionDate: "20 ديسبمبر 2024",
+    duration: "2 أسابيع",
     projectType: "لوحة تحكم مالية",
     projectFeatures: [
       "لوحة معلومات رئيسية مع نظرة عامة على المؤشرات المالية",
       "رسوم بيانية تفاعلية وقابلة للتخصيص",
-      "إمكانية تصدير البيانات بتنسيقات مختلفة (PDF, Excel)",
-      "نظام تنبيهات للتغيرات المهمة",
       "واجهة مستخدم قابلة للتخصيص حسب تفضيلات المستخدم",
       "تصميم متجاوب يعمل على جميع الأجهزة",
       "نظام مصادقة آمن للوصول إلى البيانات",
     ],
     challenges: [
-      {
-        challenge: "معالجة وعرض كميات كبيرة من البيانات المالية",
-        solution: "تنفيذ virtual scrolling وتحسين استعلامات البيانات",
-        result: "أداء سريع حتى مع مجموعات البيانات الكبيرة",
-      },
+   
       {
         challenge: "إنشاء رسوم بيانية معقدة وسهلة الفهم",
         solution: "استخدام Chart.js مع تخصيصات متقدمة للرسوم",
         result: "عرض مرئي واضح للمعلومات المالية المعقدة",
       },
-      {
-        challenge: "ضمان دقة البيانات المالية المعروضة",
-        solution: "تنفيذ طبقات تحقق متعددة واختبارات وحدة شاملة",
-        result: "نظام موثوق يعرض البيانات بدقة عالية",
-      },
+   
     ],
     techStack: {
       frontend: ["React", "Chart.js", "Tailwind CSS", "AOS"],
-      stateManagement: ["React Context", "Redux Toolkit"],
+      stateManagement: ["React Context", ],
       tools: ["Git", "GitHub", "VS Code", "Figma"],
     },
     role: "مطور الواجهة الأمامية",
@@ -191,9 +175,9 @@ const projects = [
     ],
     category: "منصة ويب مع لوحة تحكم",
     link: "https://github.com/Mosnad-Web01/mosnad-platform",
-    liveLink: "https://github.com/Mosnad-Web01/mosnad-platform",
+    liveLink: "",
     tags: ["Laravel", "PHP", "Tailwind CSS", "Next.js", "Sanctom API"],
-    completionDate: "15 مارس 2023",
+    completionDate: "not yet",
     duration: "3 أشهر",
     projectType: "منصة ويب",
     projectFeatures: [
@@ -223,33 +207,31 @@ const projects = [
       },
     ],
     techStack: {
-      frontend: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
+      frontend: ["React", "Next.js", "JavaScript", "Tailwind CSS"],
       backend: ["Laravel", "PHP", "MySQL"],
       tools: ["Git", "GitHub", "VS Code", "Figma"],
     },
     role: "مطور ومصمم الواجهة الأمامية",
-    status: "مكتمل",
+    status: "غير مكتمل",
   },
   {
     id: 5,
     title: "مطعم ساكورا سوشي",
     description:
-      "موقع عصري لمطعم سوشي ياباني يقدم تجربة طعام فريدة مع قوائم تفاعلية.",
+      "موقع عصري لمطعم سوشي ياباني يقدم تجربة طعام فريدة.",
 
     image: "/images/mockups/Untitled design (2).png",
     images: ["/images/mockups/Untitled design (2).png"],
     category: "موقع ويب",
-    link: "https://yasseresam.github.io/Sushiman---Japanese-Food-Website/",
+    link: "",
     liveLink: "https://yasseresam.github.io/Sushiman---Japanese-Food-Website/",
     tags: ["HTML", "CSS", "JS", "AOS"],
-    completionDate: "15 مارس 2023",
+    completionDate: "15 مارس 2024",
     duration: "3 أسابيع",
     projectType: "موقع ويب",
     projectFeatures: [
       "تصميم عصري وجذاب يركز على تجربة المستخدم",
       "قوائم تفاعلية تعرض الأطباق والمشروبات",
-      "نظام حجز طاولات عبر الإنترنت",
-      "نموذج اتصال سهل الاستخدام",
       "تحسين لمحركات البحث وسرعة تحميل عالية",
       "توافق كامل مع جميع أحجام الشاشات",
     ],
@@ -259,11 +241,6 @@ const projects = [
         challenge: "تحقيق تصميم متجاوب يعمل على جميع الأجهزة",
         solution: "استخدام تقنيات CSS الحديثة مثل Flexbox وGrid",
         result: "تجربة مستخدم سلسة على جميع أحجام الشاشات",
-      },
-      {
-        challenge: "ضمان أمان البيانات والمعلومات الحساسة",
-        solution: "تنفيذ بروتوكولات أمان متقدمة وتشفير البيانات",
-        result: "حماية قوية ضد الهجمات الإلكترونية",
       },
       {
         challenge: "تحسين أداء الموقع وسرعة التحميل",
@@ -324,118 +301,10 @@ const projects = [
       tools: ["Git", "GitHub", "VS Code", "Figma"],
     },
     role: "مطور ومصمم الواجهة الأمامية",
-    status: "مكتمل",
-  },
-
-  {
-    id: 7,
-    title: "منصة التوظيف بيكسل",
-    description:
-      "تطبيق ويب مبني بـ Laravel لإدارة الوظائف والتقديم عليها، يتضمن ملفات تعريف لأصحاب العمل، وأوصاف وظيفية مفصلة، ووظائف التقديم. مبني باستخدام Laravel وTailwind CSS",
-    image: "/images/mockups/jobPosting.png",
-    images: ["/images/mockups/jobPosting.png"],
-    category: "تطبيق ويب",
-    link: "https://github.com/ahmedalsanadi/Pixel-Job-App-Site",
-    liveLink: "",
-    tags: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
-    completionDate: "15 مارس 2025",
-    duration: "3 أشهر",
-    projectType: "تطبيق ويب",
-    projectFeatures: [
-      "إنشاء وإدارة الوظائف والتقديم عليها",
-      "ملفات تعريف لأصحاب العمل مع تفاصيل الشركة",
-      "نظام تقييم للمتقدمين",
-      "واجهة مستخدم متجاوبة وسهلة الاستخدام",
-      "نظام إشعارات للتحديثات المهمة",
-    ],
-    challenges: [
-      {
-        challenge: "إدارة حالة التطبيق المعقدة",
-        solution: "استخدام Laravel مع تقسيم الحالة بشكل منطقي",
-        result: "إدارة حالة فعالة وسهلة الصيانة",
-      },
-      {
-        challenge: "تحسين أداء التطبيق مع زيادة عدد المستخدمين",
-        solution: "تنفيذ التخزين المؤقت على جانب الخادم والعميل",
-        result: "أداء عالي حتى مع زيادة الحمل",
-      },
-      {
-        challenge: "ضمان أمان البيانات والمعلومات الحساسة",
-        solution: "تنفيذ بروتوكولات أمان متقدمة وتشفير البيانات",
-        result: "حماية قوية ضد الهجمات الإلكترونية",
-      },
-    ],
-    techStack: {
-      frontend: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
-      backend: ["Laravel", "PHP", "MySQL"],
-      tools: ["Git", "GitHub", "VS Code", "Figma"],
-    },
-    role: "مطور ومصمم الواجهة الأمامية",
-    status: "مكتمل",
+    status: "غير مكتمل",
   },
   {
-    id: 8,
-    title: "صفحة بيكاس",
-    description:
-      "صفحة هبوط حديثة لأداة إنتاجية، تتميز بتصميم نظيف وتنقل سهل. تسلط الضوء على قيمة المنصة من خلال شعارات العملاء والميزات الأساسية",
-    detailedDescription: `
-      صفحة هبوط حديثة ومبتكرة لأداة إنتاجية تعتمد على الذكاء الاصطناعي. تم تصميم الصفحة لتقديم نظرة عامة جذابة عن المنتج مع التركيز على الميزات الرئيسية وقيمة العملاء. الصفحة مصممة لتحقيق أعلى معدلات التحويل مع الحفاظ على تجربة مستخدم ممتازة.
-    `,
-    image: "/images/projects/biccas/main.png",
-    images: [
-      "/images/projects/biccas/main.png",
-      "/images/projects/biccas/2.png",
-      "/images/projects/biccas/3.png",
-      "/images/projects/biccas/4.png",
-      "/images/projects/biccas/5.png",
-      "/images/projects/biccas/6.png",
-      "/images/projects/biccas/7.png",
-      "/images/projects/biccas/8.png",
-    ],
-    category: "صفحة هبوط",
-    link: "https://ahmedalsanadi.github.io/Biccas-Landing-Page-Ahmed-Al-Sanadi/",
-    liveLink:
-      "https://ahmedalsanadi.github.io/Biccas-Landing-Page-Ahmed-Al-Sanadi/",
-    tags: ["HTML", "CSS", "JavaScript"],
-
-    completionDate: "5 ديسمبر 2022",
-    duration: "3 أسابيع",
-    projectType: "صفحة هبوط تسويقية",
-    projectFeatures: [
-      "تصميم عصري وجذاب يركز على تجربة المستخدم",
-      "حركات وتفاعلات سلسة لتحسين المشاركة",
-      "أقسام واضحة تعرض ميزات المنتج الرئيسية",
-      "شهادات عملاء لبناء الثقة",
-      "نموذج اتصال سهل الاستخدام",
-      "تحسين لمحركات البحث وسرعة تحميل عالية",
-      "توافق كامل مع جميع أحجام الشاشات",
-    ],
-    challenges: [
-      {
-        challenge: "تحقيق أداء عالي مع الحفاظ على التأثيرات البصرية",
-        solution: "تحسين الصور واستخدام تقنيات حديثة مثل lazy loading",
-        result: "صفحة سريعة التحميل مع الحفاظ على الجماليات",
-      },
-      {
-        challenge: "ضمان التوافق مع المتصفحات القديمة",
-        solution: "استخدام polyfills واختبار شامل عبر المتصفحات",
-        result: "تجربة متسقة عبر جميع المتصفحات الشائعة",
-      },
-      {
-        challenge: "تحسين معدلات التحويل",
-        solution: "اختبار A/B للعناصر الرئيسية وتحسين مسار التحويل",
-        result: "زيادة ملحوظة في معدلات التحويل",
-      },
-    ],
-    techStack: {
-      frontend: ["HTML5", "CSS3", "JavaScript", "GSAP"],
-      tools: ["Git", "GitHub", "VS Code", "Adobe XD"],
-    },
-    role: "مصمم ومطور الواجهة الأمامية",
-    status: "مكتمل",
-  },
-  {
-    id: 9,
+    id:7,
     title: "تطبيق تويتر",
     description:
       "تطبيق ويب متكامل مصمم لمحاكاة الوظائف الأساسية لمنصة التواصل الاجتماعي الشهيرة تويتر",
@@ -449,7 +318,7 @@ const projects = [
       "/images/projects/twitter-app/2.png",
     ],
     category: "تطبيق ويب",
-    link: "https://github.com/ahmedalsanadi/twitter-app",
+    link: "",
     liveLink: "https://twitter-2n7ic2inc-ahmedalsanadis-projects.vercel.app/",
     tags: [
       "TypeScript",
@@ -496,6 +365,50 @@ const projects = [
     },
     role: "مطور الواجهة الأمامية والخلفية",
     status: "مكتمل",
+  },
+  {
+    id: 8,
+    title: "منصة التوظيف بيكسل",
+    description:
+      "تطبيق ويب مبني بـ Laravel لإدارة الوظائف والتقديم عليها، يتضمن ملفات تعريف لأصحاب العمل، وأوصاف وظيفية مفصلة، ووظائف التقديم. مبني باستخدام Laravel وTailwind CSS",
+    image: "/images/mockups/jobPosting.png",
+    images: ["/images/mockups/jobPosting.png"],
+    category: "تطبيق ويب",
+    link: "https://github.com/ahmedalsanadi/Pixel-Job-App-Site",
+    liveLink: "",
+    tags: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
+    completionDate: "15 مارس 2025",
+    duration: "3 أشهر",
+    projectType: "تطبيق ويب",
+    projectFeatures: [
+      "إنشاء وإدارة الوظائف والتقديم عليها",
+      "ملفات تعريف لأصحاب العمل مع تفاصيل الشركة",
+      "واجهة مستخدم متجاوبة وسهلة الاستخدام",
+    ],
+    challenges: [
+      {
+        challenge: "إدارة حالة التطبيق المعقدة",
+        solution: "استخدام Laravel مع تقسيم الحالة بشكل منطقي",
+        result: "إدارة حالة فعالة وسهلة الصيانة",
+      },
+      {
+        challenge: "تحسين أداء التطبيق مع زيادة عدد المستخدمين",
+        solution: "تنفيذ التخزين المؤقت على جانب الخادم والعميل",
+        result: "أداء عالي حتى مع زيادة الحمل",
+      },
+      {
+        challenge: "ضمان أمان البيانات والمعلومات الحساسة",
+        solution: "تنفيذ بروتوكولات أمان متقدمة وتشفير البيانات",
+        result: "حماية قوية ضد الهجمات الإلكترونية",
+      },
+    ],
+    techStack: {
+      frontend: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
+      backend: ["Laravel", "PHP", "MySQL"],
+      tools: ["Git", "GitHub", "VS Code", "Figma"],
+    },
+    role: "مطور ومصمم الواجهة الأمامية",
+    status: "غير مكتمل",
   },
 ];
 

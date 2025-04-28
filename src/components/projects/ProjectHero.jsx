@@ -78,23 +78,27 @@ export default function ProjectHero({ project }) {
           <div ref={swiperRef} className="swiper h-[60vh] w-full md:h-[90vh]">
             <div className="swiper-wrapper">
               {project.images.map((img, index) => (
-                <div
-                  key={index}
-                  className="swiper-slide relative h-full w-full"
-                >
-                  {/* Updated overlay with more modern and sophisticated gradient approach */}
-                  <div className="absolute inset-0 z-10">
-                    {/* Base image blending layer */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 dark:to-black/40" />
-                    
-                    {/* Side gradient for image framing */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-900/30 via-transparent to-gray-900/30 dark:from-black/50 dark:to-black/50" />
-                    
-                    {/* Top vignette effect */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-transparent dark:from-black/40" />
-                    
-                    {/* Enhanced backdrop for card visibility */}
-                    <div className="absolute bottom-0 right-0 h-2/3 w-full bg-gradient-to-t from-gray-100/70 to-transparent dark:from-black/80 dark:to-transparent md:w-2/3 lg:w-1/2" />
+                <div key={index} className="swiper-slide relative h-full w-full">
+                  {/* Beautiful Gradient Overlay */}
+                  <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                  <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/30 via-transparent to-black/30"></div>
+                  
+                  {/* Subtle Animated Particles Overlay */}
+                  <div className="absolute inset-0 z-10 overflow-hidden">
+                    {[...Array(20)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="absolute rounded-full bg-white/10"
+                        style={{
+                          width: `${Math.random() * 4 + 1}px`,
+                          height: `${Math.random() * 4 + 1}px`,
+                          top: `${Math.random() * 100}%`,
+                          left: `${Math.random() * 100}%`,
+                          animation: `float ${Math.random() * 10 + 10}s linear infinite`,
+                          animationDelay: `${Math.random() * 5}s`,
+                        }}
+                      />
+                    ))}
                   </div>
                   
                   <Image
@@ -202,6 +206,23 @@ export default function ProjectHero({ project }) {
           </h1>
         </div>
       )}
+
+      {/* Global styles for the particle animation */}
+      <style jsx global>{`
+        @keyframes float {
+          0% {
+            transform: translateY(0) translateX(0);
+            opacity: 0;
+          }
+          10% {
+            opacity: 0.5;
+          }
+          100% {
+            transform: translateY(-100vh) translateX(20px);
+            opacity: 0;
+          }
+        }
+      `}</style>
     </div>
   );
 }
