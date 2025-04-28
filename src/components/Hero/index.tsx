@@ -26,7 +26,7 @@ const Hero = () => {
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                   <Link
                     data-aos="fade-in"
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
+                    href="/contact"
                     className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#4A6CF7] to-[#A259F7] px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#4A6CF7]/30"
                   >
                     <span className="relative z-10">ابدأ مشروعك الآن🔥</span>
@@ -34,7 +34,7 @@ const Hero = () => {
                   </Link>
                   <Link
                     data-aos="fade-in"
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                    href="/projects"
                     className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg border-2 border-[#4A6CF7] bg-transparent px-8 py-4 text-base font-semibold text-[#4A6CF7] transition-all duration-300 hover:scale-105 hover:bg-[#4A6CF7] hover:text-white dark:border-white/20 dark:text-white dark:hover:bg-white/10"
                   >
                     <span className="relative z-10">اعمالنا السابقة</span>

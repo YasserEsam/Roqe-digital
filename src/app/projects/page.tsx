@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 };
 
 const statsData = [
-  { value: 25, label: "دولة" },
-  { value: 12, label: "خبير تقني" },
-  { value: 238, label: "عميل سعيد" },
-  { value: 253, label: "مشروع منجز" },
+  { value: 3, label: "دولة" },
+  { value: 4, label: "خبير تقني" },
+  { value: 8, label: "عميل سعيد" },
+  { value: 12, label: "مشروع منجز" },
 ];
 
 

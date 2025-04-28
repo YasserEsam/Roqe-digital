@@ -29,7 +29,7 @@ const PortfolioSection = () => {
             className="group from-primary/90 overflow-hidden rounded-xl bg-gradient-to-br to-purple-600/90 text-white shadow-lg transition-all duration-300 hover:shadow-xl dark:shadow-gray-800"
           >
             <div className="flex h-full flex-col items-center justify-center p-8 text-center">
-              <Link href="#contact">
+              <Link href="/contact">
                 <div className="mb-6 rounded-full bg-white/20 p-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const PortfolioSection = () => {
                 لمساعدتك في تحقيق رؤيتك.
               </p>
               <Link
-                href="#contact"
+                href="/contact"
                 className="text-primary rounded-lg bg-white px-6 py-3 font-semibold transition-colors hover:bg-white/90"
               >
                 ابدأ مشروعك الآن
