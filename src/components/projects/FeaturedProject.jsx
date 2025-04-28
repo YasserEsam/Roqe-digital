@@ -46,7 +46,7 @@ const FeaturedProject = () => (
         </div>
 
         <a
-          href="https://github.com/ahmedalsanadi/Movie-Streaming-App"
+          href="https://movies-website-pearl.vercel.app/en"
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary flex items-center font-semibold hover:underline"
