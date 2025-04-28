@@ -14,8 +14,8 @@ import { Metadata } from "next";
 import PortfolioSection from "@/components/projects/PortfolioSection";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "رقي ديجيتال | الصفحة الرئيسية",
+  description: "موقع رقي ديجيتال",
   // other metadata
 };
 
